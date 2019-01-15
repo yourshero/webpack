@@ -29,7 +29,7 @@ npm test
 ```
 ### webpack相关配置
 ```
-    1.vue-cli 打包上线
+    1.vue-cli 打包上线(版本控制、打包体积压缩)
         npm run build
         这两种命令的配置文件在config的index.js  一种是build 一种是dev ，而我们想要在本地查看打包后的成果，需要在assetsPublicPath 改变它的路径为'./',之后只需要放在服务器上运行就好了。
         在config -> index.js 中的 build 代码中的 productionSourceMap的值设为false ，打包后文件体积可以减少百分之八十.
